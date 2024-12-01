@@ -4,13 +4,15 @@
 - Hugo Jiménez García
 - Alonso Cañas Rico
 
+
 ## Tabla de resultados
 
 | Modelo                                     | Dataset | Accuracy  | Roc-Auc    | Brier      | c@1       | F1          | F0.5U       | Mean       |
 |-------------------------------------------|---------|-----------|------------|------------|-----------|-------------|-------------|------------|
-| Modelo Individual Concatenar Embeddings - Bert | Train   | 0.9998867 | 1.0        | 0.00010471 | 0.9998867 | 0.99989481  | 0.99983171  | 0.99990171 |
-| Modelo Individual Concatenar Embeddings - Bert | Val     | 0.9932127 | 0.99971165 | 0.00637516 | 0.9932127 | 0.99369748  | 0.99369748  | 0.99478882 |
-| Modelo Individual Concatenar Embeddings - Bert | Test    | 0.9892534 | 0.99933351 | 0.00898538 | 0.9892534 | 0.99004715  | 0.98849372  | 0.99162848 |
+| Modelo Individual - Bert | Test | 0.99632353 | 0.99981528 | 0.99257655 | 0.99632353 | 0.99658703 | 0.99643007 | 0.79931587 |
+| Modelo Individual Concatenar Embeddings - Bert | Train   | 0.9998867 | 1.0        | 0.99989529 | 0.9998867 | 0.99989481  | 0.99983171  | 0.99990171 |
+| Modelo Individual Concatenar Embeddings - Bert | Val     | 0.9932127 | 0.99971165 | 0.99362484 | 0.9932127 | 0.99369748  | 0.99369748  | 0.99478882 |
+| Modelo Individual Concatenar Embeddings - Bert | Test    | 0.9892534 | 0.99933351 | 0.99101462 | 0.9892534 | 0.99004715  | 0.98849372  | 0.99162848 |
 
 
 ## Explicación de modelos
