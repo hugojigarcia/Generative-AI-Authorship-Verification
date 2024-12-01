@@ -36,30 +36,20 @@
 ## Explicación de modelos
 Para cada tipo de modelo, se ha probado tanto con bert-base-uncased como con Lau123/distilbert-base-uncased-detect_ai_generated_text, un modelo prentrenado para la tarea de clasificación de textos según si su autor es humano o una IA.
 
+Las pruebas se han realizado cada una en un notebook variando de una a otra en la definición del modelo (arquitectura y modelo a fine-tunear) y en los hiperparámetros.
+
+
 ### Modelo Individual 
+Utiliza los modelos bert-base-uncased y distilbert-base-uncased-detect_ai_generated_text para realizar una predicción sobre cada uno de los textos de la pareja por separado. Luego dictamina que texto es el humano según cuál de los dos resultados es mayor.
 
 
 ### Modelo Individual Concatenar Embeddings
+Se realiza una concatenación de los dos textos de la pareja unidos por el token [SEP] (esto lo hace automáticamente el tokenizer). A continuación, se le introduce al modelo y este genera unos embeddings (last_hidden_state), los cuales son procesados por otra capa densa y se devuelve un output que indica qué texto es el generado por humano.
 
 
 ### Modelo Siamés
+Se realizan los embeddings de los dos textos usando el modelo base. Luego pasa por otra capa densa, se calcula la similaridad coseno y se emplea una última capa densa para clasificar qué texto es el generado por humano.
+
 
 ### Enfoque de aprendizaje contrastivo
 Se investigó como poder aplicar este tipo de entrenamiento para esta tarea, pero finalmente nos enfocamos más en el resto de aproximaciones, puesto que nos daban buenos resultados.
-
-
-
-## Create env
-```
-python -m venv venv
-venv\Scripts\activate
-
-python.exe -m pip install --upgrade pip
-pip install -r requirements.txt
-```
-
-## Compile requirements
-```
-pip install pip-tools==7.4.1
-pip-compile requirements.in
-```
