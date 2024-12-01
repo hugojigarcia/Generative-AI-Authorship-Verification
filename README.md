@@ -57,6 +57,9 @@ Este enfoque garantiza que no haya "trampas", ya que evita que combinaciones de 
 | Modelo Siames - Bert - Última capa no congelada | Train | 0.49507194 | 0.49930613 | 0.73494949 | 0.49507194 | 0.51643702 | 0.52633907 | 0.55442073 |
 | Modelo Siames - Bert - Última capa no congelada | Val | 0.49717195 | 0.49737846 | 0.73385354 | 0.49717195 | 0.50196078 | 0.52287582 | 0.55064811 |
 | Modelo Siames - Bert - Última capa no congelada | Test | 0.49321267 | 0.49993451 | 0.73410456 | 0.49321267 | 0.51905529 | 0.52600087 | 0.46081975 |
+| Modelo Siames - Preentrenado - Congelado | Train | 0.53846154 | 0.50963193 | 0.75015994 | 0.53846154 | 0.70000000 | 0.59322034 | 0.61829475 |
+| Modelo Siames - Preentrenado - Congelado | Val | 0.53846154 | 0.51504508 | 0.75015154 | 0.53846154 | 0.70000000 | 0.59322034 | 0.61937570 |
+| Modelo Siames - Preentrenado - Congelado | Test | 0.53846154 | 0.49667576 | 1-0.24983721 | 0.53846154 | 0.70000000 | 0.59322034 | 0.61570409 |
 | Modelo Siames - Preentrenado - Última capa no congelada | Train | 0.53846154 | 0.49575905 | 0.74125414 | 0.53846154 | 0.70000000 | 0.59322034 | 0.61373901 |
 | Modelo Siames - Preentrenado - Última capa no congelada | Val | 0.53846154 | 0.49727225 | 0.73863060 | 0.53846154 | 0.70000000 | 0.59322034 | 0.61351695 |
 | Modelo Siames - Preentrenado - Última capa no congelada | Test | 0.53846154 | 0.50742873 | 0.73908130 | 0.53846154 | 0.70000000 | 0.59322034 | 0.61563838 |
