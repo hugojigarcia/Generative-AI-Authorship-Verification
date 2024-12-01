@@ -5,6 +5,27 @@
 - Alonso Cañas Rico
 
 
+## Introducción
+Para realizar la tarea de determinar cuál de los textos en un par fue generado por un humano y cuál por una IA, hemos empleado diversos enfoques que serán explicados más adelante.
+
+El primer paso consiste en procesar los datos y organizarlos en el formato requerido: pares de textos, donde uno ha sido redactado por un humano y el otro por una IA. Además, cada par de textos estará acompañado de una etiqueta que indica cuál es el texto humano.
+
+Las etiquetas se definen de la siguiente manera:
+
+- 0: el primer texto del par es el redactado por un humano, y el segundo fue generado por una IA.
+- 1: el segundo texto del par es el redactado por un humano, y el primero fue generado por una IA.
+
+Dado que cada texto pertenece a un ID específico, las combinaciones se realizaron únicamente entre los textos asociados al mismo ID. Es decir, para un ID dado, se generaron todas las combinaciones posibles de pares humano-IA dentro de ese mismo ID.
+
+La división en los conjuntos de train, validación y test también se realizó respetando los IDs. En concreto:
+
+- 62'5% de los IDs se asignaron al conjunto de train.
+- 12'5% de los IDs al conjunto de validación.
+- 25% de los IDs IDs al conjunto de test.
+
+Este enfoque garantiza que no haya "trampas", ya que evita que combinaciones de un mismo ID aparezcan en diferentes conjuntos de datos. Si esto ocurriera, el modelo podría estar siendo evaluado con datos que ya había visto durante su entrenamiento, comprometiendo así la validez de los resultados.
+
+
 ## Tabla de resultados
 
 | Modelo                                     | Dataset | Accuracy  | Roc-Auc    | Brier      | c@1       | F1          | F0.5U       | Mean       |
@@ -44,7 +65,12 @@
 ## Explicación de modelos
 Para cada tipo de modelo, se ha probado tanto con bert-base-uncased como con Lau123/distilbert-base-uncased-detect_ai_generated_text, un modelo prentrenado para la tarea de clasificación de textos según si su autor es humano o una IA.
 
-Las pruebas se han realizado cada una en un notebook variando de una a otra en la definición del modelo (arquitectura y modelo a fine-tunear) y en los hiperparámetros.
+Las pruebas se llevaron a cabo en notebooks separados, variando entre ellas en dos aspectos principales:
+
+- La definición del modelo, incluyendo tanto la arquitectura como el modelo seleccionado para el fine-tuning.
+- Los hiperparámetros utilizados en el proceso de entrenamiento.
+
+Se cuenta con un hiperparámetro llamado LAYERS_TO_TRAIN, el cual indica la cantidad de capas del modelo original a entrenar (ya sea bert-base-uncased o distilbert-base-uncased-detect_ai_generated_text), tomando siempre las finales. Es decir, si el parámetro es LAYERS_TO_TRAIN=1, todos los pesos del modelo original estarán congelados salvo la última capa. En cualquier caso, se ha tomado la decisión de que siempre se reentrenen los parámetros de la capa pooler.dense, incluso cuando LAYERS_TO_TRAIN=0. Esto es para asegurar que siempre se realiza un fine-tuning del modelo original.
 
 
 ### Modelo Individual 
