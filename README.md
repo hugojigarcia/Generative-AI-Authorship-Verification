@@ -12,7 +12,11 @@
 | Modelo Individual - Bert - Congelado| Train | 0.94380877 | 0.98509176 | 0.93101753 | 0.94380877 | 0.94773446 | 0.94869415 | 0.95126933 |
 | Modelo Individual - Bert - Congelado| Val | 0.95418552 | 0.98920487 | 0.94012256 | 0.95418552 | 0.95716552 | 0.96112999 | 0.96036169 |
 | Modelo Individual - Bert - Congelado| Test | 0.95361991 | 0.98982985 | 0.93798217 | 0.95361991 | 0.95675105 | 0.95917936 | 0.95947247 |
+| Modelo Individual - Bert - Última capa no congelada | Train | 0.99739436 | 0.99992248 | 0.99551480 | 0.99739436 | 0.99758124 | 0.99739244 | 0.99756106 |
+| Modelo Individual - Bert - Última capa no congelada | Val | 0.99830317 | 0.99976443 | 0.99529791 | 0.99830317 | 0.99842520 | 0.99811083 | 0.99798031 |
 | Modelo Individual - Bert - Última capa no congelada | Test | 0.99632353 | 0.99981528 | 0.99257655 | 0.99632353 | 0.99658703 | 0.99643007 | 0.79931587 |
+| Modelo Individual - Preentrenado - Congelada | Train | 0.97394358 | 0.99617202 | 0.97802812 | 0.97394358 | 0.97578947 | 0.97615939 | 0.98001852 |
+| Modelo Individual - Preentrenado - Congelada | Val | 0.98472851 | 0.99719116 | 0.98411381 | 0.98472851 | 0.98582677 | 0.98551637 | 0.98747532 |
 | Modelo Individual - Preentrenado - Congelada | Test | 0.97963801 | 0.99794743 | 0.98289116 | 0.97963801 | 0.98103267 | 0.98289696 | 0.98488125 |
 | Modelo Individual - Preentrenado - Última capa no congelada | Train | 0.9961 | 0.9993 | 0.0046 | 0.9961 | 0.9964 | 0.9963 | 0.7986 |
 | Modelo Individual - Preentrenado - Última capa no congelada | Val | 0.9910 | 0.9987 | 0.0086 | 0.9910 | 0.9916 | 0.9928 | 0.7965 |
@@ -29,7 +33,11 @@
 | Modelo Individual Concatenar Embeddings - Preentrenado  - Última capa no congelada | Train   | 0.9873117 | 0.99901651 | 0.01027358 | 0.9873117 | 0.98827961  | 0.98518673  | 0.98990419 |
 | Modelo Individual Concatenar Embeddings - Preentrenado  - Última capa no congelada | Val     | 0.9796380 | 0.99611242 | 0.01720775 | 0.9796380 | 0.98126951  | 0.97578642  | 0.98311972 |
 | Modelo Individual Concatenar Embeddings - Preentrenado  - Última capa no congelada | Test    | 0.9694570 | 0.99619947 | 0.02372124 | 0.9694570 | 0.97175732  | 0.96932387  | 0.97660329 |
-| Modelo Siames - Bert | Test | 0.49321267 | 0.49993451 | 0.73410456 | 0.49321267 | 0.51905529 | 0.52600087 | 0.46081975 |
+| Modelo Siames - Bert - Última capa no congelada | Train | 0.49507194 | 0.49930613 | 0.73494949 | 0.49507194 | 0.51643702 | 0.52633907 | 0.55442073 |
+| Modelo Siames - Bert - Última capa no congelada | Val | 0.49717195 | 0.49737846 | 0.73385354 | 0.49717195 | 0.50196078 | 0.52287582 | 0.55064811 |
+| Modelo Siames - Bert - Última capa no congelada | Test | 0.49321267 | 0.49993451 | 0.73410456 | 0.49321267 | 0.51905529 | 0.52600087 | 0.46081975 |
+| Modelo Siames - Preentrenado - Última capa no congelada | Train | 0.53846154 | 0.49575905 | 0.74125414 | 0.53846154 | 0.70000000 | 0.59322034 | 0.61373901 |
+| Modelo Siames - Preentrenado - Última capa no congelada | Val | 0.53846154 | 0.49727225 | 0.73863060 | 0.53846154 | 0.70000000 | 0.59322034 | 0.61351695 |
 | Modelo Siames - Preentrenado - Última capa no congelada | Test | 0.53846154 | 0.50742873 | 0.73908130 | 0.53846154 | 0.70000000 | 0.59322034 | 0.61563838 |
 
 
