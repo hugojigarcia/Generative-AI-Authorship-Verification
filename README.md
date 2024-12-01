@@ -21,6 +21,7 @@
 | Modelo Individual Concatenar Embeddings - Preentrenado | Train   | 0.9873117 | 0.99901651 | 0.01027358 | 0.9873117 | 0.98827961  | 0.98518673  | 0.98990419 |
 | Modelo Individual Concatenar Embeddings - Preentrenado | Val     | 0.9796380 | 0.99611242 | 0.01720775 | 0.9796380 | 0.98126951  | 0.97578642  | 0.98311972 |
 | Modelo Individual Concatenar Embeddings - Preentrenado | Test    | 0.9694570 | 0.99619947 | 0.02372124 | 0.9694570 | 0.97175732  | 0.96932387  | 0.97660329 |
+| Modelo Siames - Preentrenado - Última capa no congelada | Test | 0.53846154 | 0.50742873 | 0.73908130 | 0.53846154 | 0.70000000 | 0.59322034 | 0.61563838 |
 
 
 ## Explicación de modelos
