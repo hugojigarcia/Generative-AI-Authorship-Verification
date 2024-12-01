@@ -18,6 +18,9 @@
 | Modelo Individual Concatenar Embeddings - Bert | Val     | 0.9932127 | 0.99971165 | 0.99362484 | 0.9932127 | 0.99369748  | 0.99369748  | 0.99478882 |
 | Modelo Individual Concatenar Embeddings - Bert | Test    | 0.9892534 | 0.99933351 | 0.99101462 | 0.9892534 | 0.99004715  | 0.98849372  | 0.99162848 |
 | Modelo Siames - Bert | Test | 0.49321267 | 0.49993451 | 0.73410456 | 0.49321267 | 0.51905529 | 0.52600087 | 0.46081975 |
+| Modelo Individual Concatenar Embeddings - Preentrenado | Train   | 0.9873117 | 0.99901651 | 0.01027358 | 0.9873117 | 0.98827961  | 0.98518673  | 0.98990419 |
+| Modelo Individual Concatenar Embeddings - Preentrenado | Val     | 0.9796380 | 0.99611242 | 0.01720775 | 0.9796380 | 0.98126951  | 0.97578642  | 0.98311972 |
+| Modelo Individual Concatenar Embeddings - Preentrenado | Test    | 0.9694570 | 0.99619947 | 0.02372124 | 0.9694570 | 0.97175732  | 0.96932387  | 0.97660329 |
 
 
 ## Explicación de modelos
